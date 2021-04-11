@@ -345,3 +345,114 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (min-width : 481px) and (max-width : 767px) {
+
+    .toggle-button {
+        display: flex;
+    }
+
+    ul.nav-links {
+        display: none;
+    }
+
+    div.nav-bar {
+        position: absolute;
+        z-index: 1;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul.nav-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    ul li {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    ul li a {
+        padding: .5rem 1rem;
+    }
+
+    ul.nav-links.active {
+        display: flex;
+    }
+
+
+    div.hero-section {
+        padding: 6rem 1rem;
+    }
+
+    div.hero-background {
+        padding: 6rem 1rem;
+    }
+
+    div.background {
+        padding: 15px 20px;
+        width: 65%;
+        height: 230px;
+    }
+
+    div.background h4 {
+        padding: 1rem;
+    }
+
+    div.background p {
+        padding-left: 0.5rem;
+    }
+
+    div.hero-background-pos {
+        left: 70%;
+    }
+
+    div.snapshot-box {
+        padding: 4rem 2rem;
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+    }
+
+    div.footer-input {
+        display: block;
+    }
+
+    input[type="text"] {
+        display: block;
+        margin: 1rem auto;
+        width: 70%;
+    }
+    
+    input[type="email"] {
+        display: block;
+        margin: 1rem auto;
+        width: 70%;
+    }
+
+    textarea {
+        width: 70%;
+    }
+
+} 
